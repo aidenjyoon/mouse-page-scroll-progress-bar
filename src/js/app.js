@@ -1,5 +1,7 @@
 let cursorMeter = document.getElementById('cursorMeter');
-document.addEventListener('mousemove', function(e){
+
+// to have cursorMeter follow the cursor
+document.addEventListener('mousemove', function(e) {
     cursorMeter.style.top = e.clientY+"px";
     cursorMeter.style.left = e.clientX+"px";
 })

@@ -118,7 +118,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/app.js":[function(require,module,exports) {
-var cursorMeter = document.getElementById('cursorMeter');
+var cursorMeter = document.getElementById('cursorMeter'); // to have cursorMeter follow the cursor
+
 document.addEventListener('mousemove', function (e) {
   cursorMeter.style.top = e.clientY + "px";
   cursorMeter.style.left = e.clientX + "px";
